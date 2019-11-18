@@ -9803,7 +9803,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
 function main() {
   // code goes here
-  console.log('Hello world');
+  console.log('Pene world');
   setTimeout(function () {
     return console.log(2);
   }, 2000);

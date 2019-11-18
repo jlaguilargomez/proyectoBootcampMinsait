@@ -1,6 +1,6 @@
 export function main(){
     // code goes here
-    console.log('Hello world')
+    console.log('Pene world')
     setTimeout(() => console.log(2), 2000)
     ;[1, 2, 3].forEach(x => console.log(x))
 

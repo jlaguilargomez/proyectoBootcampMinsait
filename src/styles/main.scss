@@ -1,11 +1,15 @@
-div{
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
-    &--highlighted{
-        background-color: blue;
-    }
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(201, 255, 185);
+    font-family: 'Lato', sans-serif;
+    align-items: center;
+    font-size: 10px;
+}
 
-    p {
-        color: red;
-    }
-
+p{
+    line-height: 1rem;
 }
