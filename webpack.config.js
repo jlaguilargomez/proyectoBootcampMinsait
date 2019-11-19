@@ -39,7 +39,14 @@ module.exports = {
                     'css-loader',       // 2. convierte los ficheros css a imports de JS
                     'sass-loader',      // 1. transpila de scss a css
                 ],
-            }
+            },
+
+            {
+                test: /\.(png|svg|jpg|gif)$/,
+                use: [
+                    'file-loader',
+                ],
+                },
         ]
     },
     plugins: [ new MiniCssExtractPlugin({

@@ -3,13 +3,139 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #c9ffb9;
+  background-color: lightblue;
   font-family: 'Lato', sans-serif;
   align-items: center;
-  font-size: 10px; }
+  font-size: 12px; }
 
-p {
-  line-height: 1rem; }
+h1 {
+  margin: 0px; }
+
+.container {
+  width: 80vw;
+  height: 80vh;
+  margin: 40px;
+  background-color: white; }
+  .container--header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(5f0826376926ef2bab15e915bd6d0dec.jpg);
+    background-size: cover;
+    background-position: center; }
+    .container--header__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 34%;
+      height: 50%;
+      color: white;
+      text-align: center; }
+    .container--header__title {
+      width: 100%;
+      font-size: 2.8rem;
+      letter-spacing: 0.8rem; }
+    .container--header__text {
+      width: 100%;
+      border: 1px solid white; }
+  .container--section__img {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
+    .container--section__img--top {
+      height: 65%;
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(5830e69b8b5f7fb547f246453e23b46e.jpg); }
+    .container--section__img--middle {
+      width: 75%;
+      height: 70%;
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(bdd8d99290146c688fa638cfb6fdda87.jpg); }
+    .container--section__img--bottom {
+      width: 100%;
+      height: 70%;
+      margin-top: 12%;
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(fe43e2eb40ce82d2d581dc6ac0fc51bb.jpg); }
+  .container--section__content {
+    background-color: white;
+    padding: 0 60px; }
+    .container--section__content--top {
+      display: flex; }
+  .container--section__number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #137213; }
+  .container--section__title {
+    font-size: 3rem;
+    line-height: 1rem;
+    font-weight: bold; }
+  .container--section__subtitle {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #137213; }
+  .container--section__text {
+    text-align: justify;
+    color: #6b6969; }
+  .container--footer__img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 85%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(b915751291c73c38a7a0d33b49880034.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
+    .container--footer__img div {
+      width: 70%;
+      border: 2px solid red;
+      text-align: center;
+      color: white; }
+      .container--footer__img div span {
+        line-height: 1rem;
+        font-size: 3rem; }
+  .container--footer__content {
+    height: 15%; }
+
+.section2 {
+  display: flex;
+  flex-direction: row; }
+  .section2__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 25%;
+    padding-bottom: 40px; }
+    .section2__content div:first-child {
+      margin-bottom: 60px; }
+
+.section3 {
+  position: relative;
+  display: flex;
+  flex-direction: row; }
+  .section3__img {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
+  .section3__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 20%;
+    width: 27%;
+    padding-bottom: 40px; }
+    .section3__content div:first-child {
+      position: absolute;
+      top: 28%;
+      right: 30%;
+      z-index: 3; }
+      .section3__content div:first-child span {
+        color: white; }
+    .section3__content img {
+      width: 100%; }
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: red; } }
 
 
 /*# sourceMappingURL=build.css.map*/
