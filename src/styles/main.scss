@@ -4,8 +4,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: lightblue;
-    // background-color: rgb(26, 26, 25);
+    background-color: rgb(26, 26, 25);
     font-family: 'Lato', sans-serif;
     align-items: center;
     font-size: 12px;
@@ -190,6 +189,13 @@ h1{
     }
 
     &--footer {
+
+        &__icon {
+            width:15px;
+            height: auto;
+            padding: 10px;
+           
+        }
         
                 
         &__img {
@@ -236,10 +242,40 @@ h1{
         }
         
         &__content {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            
             height: 15%;
+
     
         }
     }
+}
+
+.plus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    height: 15vh;
+    margin: 40px;
+    
+
+    &__text {
+        font-size: 4rem;
+        font-weight: 500;
+        letter-spacing: 1.2rem;
+        color: white;
+    
+        &::before {
+            content: "+";
+            font-weight: bolder;
+
+        }
+    }
+
 }
 
 
@@ -254,4 +290,6 @@ h1{
     body {
         background-color: red;
     }
+
+    
 }
