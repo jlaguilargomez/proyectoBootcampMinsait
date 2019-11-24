@@ -37,10 +37,21 @@ h1 {
     width: 100%;
     font-size: 4rem;
     font-weight: bold;
-    letter-spacing: 1rem; }
+    letter-spacing: 1rem;
+    animation-name: changeColor;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite; }
   .header__text {
     width: 90%;
     border: 1px solid white; }
+    .header__text:hover {
+      animation-name: changeWidth;
+      animation-duration: 1s;
+      animation-timing-function: linear;
+      animation-delay: 0s;
+      animation-iteration-count: infinite; }
 
 .section__img {
   background-size: cover;
@@ -129,6 +140,8 @@ h1 {
   width: 15px;
   height: auto;
   padding: 10px; }
+  .footer__icon:hover {
+    width: 20px; }
 
 .footer__img {
   display: flex;
@@ -160,6 +173,12 @@ h1 {
     border: 1px solid white;
     width: 50%;
     margin-bottom: 50px; }
+    .footer__img__text:hover {
+      animation-name: changeWidth;
+      animation-duration: 1s;
+      animation-timing-function: linear;
+      animation-delay: 0s;
+      animation-iteration-count: infinite; }
 
 .footer__content {
   display: flex;
@@ -182,7 +201,12 @@ h1 {
     color: white; }
     .plus__text::before {
       content: "+";
-      font-weight: bolder; }
+      font-weight: bolder;
+      animation-name: changeColor;
+      animation-duration: 3s;
+      animation-timing-function: linear;
+      animation-delay: 0s;
+      animation-iteration-count: infinite; }
 
 @media only screen and (max-width: 760px) {
   body {
@@ -283,6 +307,37 @@ h1 {
       margin: 0; }
   .footer__content {
     height: 10%; } }
+
+@keyframes changeColor {
+  0% {
+    color: lightcoral; }
+  25% {
+    color: blueviolet; }
+  50% {
+    color: greenyellow; }
+  75% {
+    color: yellow; }
+  100% {
+    color: lightseagreen; } }
+
+@keyframes changeWidth {
+  0% {
+    width: 100%; }
+  25% {
+    width: 95%; }
+  50% {
+    width: 90%; }
+  75% {
+    width: 85%; }
+  100% {
+    width: 80%; } }
+
+@keyframes thing {
+  0% { }
+  25% { }
+  50% { }
+  75% { }
+  100% { } }
 
 
 /*# sourceMappingURL=build.css.map*/
