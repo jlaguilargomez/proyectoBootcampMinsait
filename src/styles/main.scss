@@ -20,7 +20,7 @@ h1{
 .container {
     width: 80vw;
     height: 80vh;
-    margin: 40px;
+    margin: 5%;
     background-color: white;
 }
 
@@ -37,7 +37,7 @@ h1{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 34%;
+        width: auto;
         height:50%;
         color: white;
         text-align: center;
@@ -58,17 +58,6 @@ h1{
 
 .section {
     
-    &--middle {
-        display:flex;
-        flex-direction: row;
-    }
-    
-    &--bottom {
-        position: relative;
-        display: flex;
-        flex-direction: row;
-    }
-
     &__img {
         background-size: cover;
         background-position: center;
@@ -87,7 +76,6 @@ h1{
 
         &--bottom {
             flex-basis: 90%;
-            
             width: 50%;
             height: 70%;
             margin-top: 100px;
@@ -98,9 +86,8 @@ h1{
     &__content {
         display: flex;
         background-color: white;
-        padding: 0 60px;
-        
-        width: 80%;
+        padding: 0 6%;
+        height: auto;
 
         &__img {
             width: 100%;
@@ -109,9 +96,9 @@ h1{
         &--top {
             flex-direction: row;
             height: auto;
+            // flex-wrap: wrap;
             align-items: center;
             height: 45%;
-            
     
             &__boxTitle {
                 flex-basis: 60%;
@@ -138,7 +125,7 @@ h1{
             flex-direction: column;
             justify-content: flex-end;
             flex-basis: 25%;
-            padding-left: 180px;
+            padding-left: 20%;
             padding-bottom: 40px;
     
             &__boxTitle {
@@ -174,7 +161,18 @@ h1{
 
     &__text {
         text-align: justify;
-        color: #6b6969;
+        color: #6b6969; 
+    }
+
+    &--middle {
+        display:flex;
+        flex-direction: row;
+    }
+    
+    &--bottom {
+        position: relative;
+        display: flex;
+        flex-direction: row;
     }
 }
 
@@ -267,6 +265,65 @@ h1{
 
 
 @media only screen and (max-width: 760px) {
+
+    
+    body{
+        font-size: 11px;
+    }
+
+    .section {   
+
+        &__title {
+            line-height: 0.5rem;
+        }
+
+        &__content {
+            
+            &__img {
+                display: none;
+            }
+
+            &--top {
+                display: flex;
+                height: auto;
+                align-self: center;
+                flex-wrap: wrap;
+      
+                margin-left: 0;
+            }
+
+            &--middle {
+                padding: 0 5%;
+            }
+
+            &--bottom {
+                padding-left: 10%;
+            }
+
+        }
+    }
+
+    .footer {
+        &__img {
+
+            &__title {
+                font-size: 1.8rem;
+            }
+
+            &__boxText {
+                width: 80%;
+            }
+        }
+    }
+
+    .plus {
+        height: 8vh;
+        margin: 20px;
+
+        &__text {
+            font-size: 2rem;
+        }
+    }
 
 
 }
